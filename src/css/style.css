@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+
+
+@font-face {
+    font-family: 'effra std', 'Effra Sts' , ;
+    src: url(../fonts/effra_std_bd-webfont.woff),
+    url(../fonts/Effra_Std_Bd.ttf),
+    url(../fonts/Effra_Std_He.ttf),
+    url(../fonts/effra_std_lt-webfont.woff),
+    url(../fonts/effra_std_lt-webfont.woff2),
+    url(../fonts/Effra_Std_Lt.ttf,),
+    url(../fonts/effra_std_rg-webfont.woff),
+    url(../fonts/effra_std_rg-webfont.woff),
+    url(../fonts/effra_std_rg-webfont.woff2),
+    url(../fonts/Effra_Std_Rg.ttf);
+}
+
+h1{
+    font-family: 'effra std';
+}
+
+html{
+    font-family: 'Roboto', 'Roboto Slab';
+    font-weight: 500;
+} 
+
+
+body{
+    display: grid;
+    grid-template-areas: "background-desktop"
+    "header" "foto-doutor-rafael" "textos" "textos" "textos"
+    ;
+}
+
+.header{
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.logo img{
+    display: flex;;
+    position: relative;
+    left: 559px; 
+    width: 150px; 
+    align-items: center;
+    
+}
+
+.background-desktop{
+    background: url(../imagens/background-desktop.png);
+    height: 89vh;
+    background-size: cover;
+}
+
+.background-desktop:after{
+    content: url(../imagens/seta_preta.png);
+    position: absolute;
+    height: 30px;
+    bottom: 40px;
+    font-size: 1rem;
+    animation: setaanimada 0.6s infinite alternate ease-in-out;
+    left: 670px;
+}
+
+@-webkit-keyframes setaanimada{
+    0% { -webkit-transform: translatey(0);}
+    100% { -webkit-transform: translatey(0.4em); opacity: 0.9;}
+}
+.titulo{
+    text-align: center;
+     margin: 35px;
+     font-size: 40px;
+     color: #484B57;
+}
+
+.subtitulo{
+    text-align: center;
+     /* margin: 35px; */
+     font-size: 20px;
+     color: #F5F5F5 ;
+   
+}
+.subtitulo{
+ background:#2fa22f;
+ margin-left: 400px;
+ margin-right: 400px;
+}
+
+.video-yt{
+     margin-top: 20px;
+     margin-left: 400px;
+}
+
+.informacao-cremes{
+    color:  #484B57;
+    margin-left: 400px;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.texto-cor{
+    color: #FF594E;
+    margin-left: 419px;
+    font-size: 25px;
+}
+
+.frase-doutor-cor{
+    color:#3B4157;
+}
+
+.foto-doutor-rafael img{
+     grid-area: foto doutor rafael;  
+}
+
+.foto-doutor-rafael img{
+    margin-left: 910px;
+    max-width: 700px;
+    max-height: 500px;
+}
+
+.textos-doutor p{
+   position: relative;
+   font-size: 18px;
+   text-align: start;
+   padding: 13px;
+   bottom: 420px;
+   margin-right: 30%;
+   margin-left: 20%;
+   
+}
+
+.background-oferta-unica{
+    background: #3B4157;
+    padding: 100px;
+}
+
+.texto-oferta-unica{
+     width: 100%;
+     color: #f1ecff;
+     font-size: 40px;
+}
+.texto-sobre-oferta{
+    color: #f1ecff;
+    font-size: 50px;
+}
+
+
+.container{ 
+    display: flex; 
+    justify-content: center;
+    gap: 50px; 
+}
+
+.titulos-oferta-unica{
+    text-align: center;
+    margin-bottom: 150px;
+}
+/* 
+.texto-oferta-unica{
+    /* background-color: #2fa22f;  */
+    /* border-radius: 20px 20px 7px 7px; 
+} */
+
+.badge img{
+    display: flex;
+    width: 115px;
+    justify-content: flex-end;
+    
+}
+/* .card-1{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+     margin-bottom: 500%;
+     
+}
+ */
+/* 
+.escolha-seu-pacote{
+    background-color:  #6b6c6f;
+    padding: 5px 25px; 
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 15px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+}
+
+
+.caixas{
+    display: flex;
+    gap: 10px;
+}
+
+.caixas{
+    width: 80px;
+    height: 80px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caixas{
+    display: inline-block;
+
+}
+.caixas-2{
+    display: inline-block;
+   
+}
+.caixa-cor1{
+    background-color: #f1ecff;
+    color: #a8abb4;
+}
+
+.caixa-cor{
+    background-color: #2fa22f;
+    color: #F5F5F5;
+}
+
+.precos-cor{
+    color: #3B4157; 
+}
+
+.preco-cor{
+   color: #3B4157;
+} 
+
+.preco-cor{
+    color:#3B4157 ;
+}  */
+
+
+/* .valor-cor{
+    color: #2fa22f;
+    
+}
+
+.listas-de-precos li{
+    display: flex;
+    margin-top: 5px 10px;
+    text-decoration: none;
+}
+
+.quantidade-de-caixas{
+    display: flex; 
+    align-items: center;
+    font-size: 19px;
+    flex-wrap: wrap;
+    margin-left: 9px;
+}
+
+.numero-caixa{
+    font-size: 30px;
+    margin-left: 25px;
+}
+.btn{
+    width: 55%;
+    right: 125px;
+    border-radius: 19px;
+} */
+
+
+.card-2{
+    display: flex;
+    width:390px;
+    height: 390px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-card-2{
+    margin-bottom: 40px;
+    background-color: #6b6c6f;
+    padding: 3px;
+    border-radius: 7px;
+    color: #f1ecff;
+}
+
+.lista-card-2 li{
+    display: flex;
+    margin-top: 5px 10px;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.check a {
+    text-decoration: none;
+    color: #484B57 ;
+    background-color: #9497a1;
+    padding: 10px;
+
+}
+
+.check{
+    text-decoration: none;
+}
+
+.cor-do-sim-check{
+    color: #3B4157; 
+   
+}
+
+.check{
+    display: flex;
+     align-items: center;
+    margin-top: 10px;
+    border: 0px;
+}
+
+
+
+  /* Ocultei a imagem marcada pelo css porque o meu código JS precisa de reparos e o tempo de entre do preojeto, foi curto. */
+.imagem-marcada{
+   display: none;
+} 
+
+
+.card-garantia{
+    display: flex;
+    width: 900px;
+    height: 300px;
+    background-color:  #F5F5F5 ;
+    border-radius: 15px;
+    margin-left: 190px;
+    margin-top: 40px;
+    align-items: center;
+    margin-right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}
+
+.img-propaganda{
+    display: flex;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 800px;
+    margin-left: 40px;
+}
+
+
+.texto-garantia{
+    display: flex;
+    color: #3B4157;
+    font-size: 40px;
+    margin-left: 30%;
+    
+} 
+
+.texto-garantia-colorido{
+    display: flex;
+    color: #FF594E;
+    font-size: 25px;
+    margin-bottom: 800px; 
+    margin-left: 90%;
+  
+} 
+
+.selo-de-garantia{
+    display: flex;
+    margin-right: 30%;
+    
+}
+.imagem-selo {
+    width: 150px;
+    height: 150px;
+    
+}
+
+.texto-selo{
+    margin-left: 60px;
+    align-items: center;
+}
+
+.frase-color-garantia{
+    color: #3B4157;
+}
+
+
+.container img{
+    display: flex;
+    position: relative;
+    margin-right: 30%;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.frase-texto-antes-depois{
+    text-align: center;
+    color: #3B4157 ;
+    margin-top: 20px;
+}
+
+.frase-2-texto-antes-e-depois{
+    display: flex;
+    text-align: center; 
+    color: #FF594E;
+    font-size: 25px;
+    margin-left: 30%;
+}
+.paragrafo-antes-e-depois p{
+    display: flex;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.cor-paragrafo-a-d{
+    color: #6b6c6f;
+}
+
+
+/* 
+
+.texto-garantia{
+    color: #3B4157;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.texto-garantia-colorido{
+    color: #FF594E;
+    font-size: 25px;
+    text-align: center;
+}
+
+.selo-de-garantia{
+    display: flex;
+    
+}
+.imagem-selo{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.texto-selo{
+    margin-left: 60px;
+    align-items: center;
+}
+
+.container img{
+    display: flex;
+    position: relative;
+    margin-right: 30%;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.frase-texto-antes-depois{
+    text-align: center;
+    color: #3B4157 ;
+    margin-top: 20px;
+}
+
+.frase-2-texto-antes-e-depois{
+    text-align: center; 
+    margin-left: 30%;
+    color: #FF594E;
+    font-size: 25px;
+}
+.paragrafo-antes-e-depois{
+      margin-left: 100px; 
+     position: absolute;
+     text-align: center;
+}
+
+.tire-suas-duvidas{
+    background-color: #3B4157;
+    padding: 50px 0;
+}
+
+.pergunta{
+    display: flex;
+    color: #d1d2d6;
+    align-items: flex-start; 
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+.duvidas-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;   
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.resposta{
+    margin-left: 10%;
+    text-align: center; 
+    max-height: 0;
+    overflow: hidden;
+}
+
+.abirir-pergunta{
+    max-width: 300px;
+}
+
+.ativar{
+    max-height: 300px;
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.fechar i{
+    transform: rotate(180deg);
+}
+
+.resposta{
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    transform: scaleY(0.2);
+    transform-origin: top;
+}
+
+.o-melhor-suplemento{
+    text-align: center;
+    margin-top: 40px;
+    color: #484B57;
+}
+
+.hidratacao-de-verdade{
+    margin-left: 45%;
+    color: #FF594E;
+    font-size: 20px;
+}
+
+.imagem-active{
+    margin-left: 825px;
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 50px;
+}
+
+.texto-sobre-beneficios{
+     bottom: 320px;
+    margin-right: 30%;
+    margin-left: 20%;
+    text-align: center;
+}
+.listas-beneficios-active li{
+    position: relative;
+    font-size: 18px;
+    text-align: start;
+    padding: 10px;
+    bottom: 320px;
+    margin-right: 30%;
+    margin-left: 20%;
+  
+} */ 
+
+
+
+
+
+
+
+
+/* #FF594E, 
+#484B57,
+#3B4157, 
+white,
+#F5F5F5 */
